@@ -28,6 +28,13 @@ def callback(request: Request):
 
     access_token = token_data["access_token"]
 
+    request.session["access_token"] = access_token
+
+   
+
     user = spotify_service.get_current_user(access_token)
 
+   
     return user
+
+ 
