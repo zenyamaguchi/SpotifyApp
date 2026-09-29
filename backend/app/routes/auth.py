@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Request
 from fastapi.responses import RedirectResponse
 from app.services import spotify_service
+from fastapi.responses import RedirectResponse
 
 from app.config import CLIENT_ID, CLIENT_SECRET, REDIRECT_URI
 
@@ -30,11 +31,11 @@ def callback(request: Request):
 
     request.session["access_token"] = access_token
 
-   
 
-    user = spotify_service.get_current_user(access_token)
+   # user = spotify_service.get_current_user(access_token)
 
    
-    return user
+    #return user
+    return RedirectResponse("http://127.0.0.1:5173")
 
  

@@ -25,6 +25,7 @@ def exchange_code_for_token(code: str):
 
 
 
+
 def get_current_user(access_token: str):
     user_profile_url = "https://api.spotify.com/v1/me"
 
@@ -90,7 +91,7 @@ def get_top_tracks(
 
 def get_genre_breakdown(
     access_token: str,
-    limit: int = 20,
+    limit: int = 50,
     time_range: str = "medium_term"
 ):
 
