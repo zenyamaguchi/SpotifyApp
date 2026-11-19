@@ -1,6 +1,6 @@
 function Login() {
     const handleLogin = () => {
-        window.location.href = "http://127.0.0.1:8000/login";
+        window.location.href = "https://spotifyapp-spx5.onrender.com/login";
     };
 
     return (
