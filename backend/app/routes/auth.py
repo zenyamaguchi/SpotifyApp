@@ -36,6 +36,6 @@ def callback(request: Request):
 
    
     #return user
-    return RedirectResponse("https://spotifyapp-spx5.onrender.com/")
+    return RedirectResponse("https://zenyamaguchi.github.io/SpotifyApp/#/dashboard")
 
  
