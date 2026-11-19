@@ -10,7 +10,7 @@ app.add_middleware(
     SessionMiddleware,
     secret_key="your-secret-key",
     same_site="none",   # "lax" works for localhost; use "none" if frontend/backend end up on different domains in prod
-    https_only=true,  # set True in production once you're on HTTPS
+    https_only=True,  # set True in production once you're on HTTPS
 )
 app.add_middleware(
     CORSMiddleware,
