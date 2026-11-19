@@ -112,7 +112,15 @@ function GenreChart() {
     cy="50%"
     outerRadius={250}
     labelLine={false}
-  label={({ cx, cy, midAngle, innerRadius, outerRadius, index }) => {
+    label={({ cx, cy, midAngle, innerRadius, outerRadius, index }: {
+        cx: number;
+        cy: number;
+        midAngle?: number;
+        innerRadius: number;
+        outerRadius: number;
+        index: number;
+    }) => {
+    if (midAngle === undefined) return null;
     const RADIAN = Math.PI / 180;
 
     const radius =

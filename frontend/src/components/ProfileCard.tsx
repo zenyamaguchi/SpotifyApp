@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getProfile } from "../services/api";
-import { apiFetch } from "../services/api";
+//import { apiFetch } from "../services/api";
 
 type Profile = {
     display_name: string;
