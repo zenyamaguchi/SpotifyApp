@@ -6,7 +6,7 @@ function App() {
     const [loggedIn, setLoggedIn] = useState(false);
 
     useEffect(() => {
-        fetch("https://spotifyapp-spx5.onrender.com//profile", {
+        fetch("https://spotifyapp-spx5.onrender.com/profile", {
             credentials: "include",
         })
             .then((response) => {

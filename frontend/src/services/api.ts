@@ -1,7 +1,7 @@
 const API_URL = "https://spotifyapp-spx5.onrender.com";
 
 export async function getProfile() {
-  const res = await fetch("https://spotifyapp-spx5.onrender.com/profile");
+  const res = await apiFetch("/profile");
     if (!res.ok) {
         throw new Error("Failed to fetch profile");
     }
