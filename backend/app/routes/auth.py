@@ -36,6 +36,6 @@ def callback(request: Request):
 
    
     #return user
-    return RedirectResponse("http://127.0.0.1:5173")
+    return RedirectResponse("https://spotifyapp-spx5.onrender.com/")
 
  
