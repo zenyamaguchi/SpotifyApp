@@ -1,4 +1,4 @@
-const API_URL = "https://spotifyapp-spx5.onrender.com/";
+const API_URL = "https://spotifyapp-spx5.onrender.com";
 
 export async function getProfile() {
   const res = await apiFetch("/profile");
@@ -12,7 +12,7 @@ export async function getProfile() {
 // frontend/src/api.ts
 export async function getGenres() {
     const response = await fetch(
-        "https://spotifyapp-spx5.onrender.com//genre-breakdown",
+        "https://spotifyapp-spx5.onrender.com/genre-breakdown",
         {
             credentials: "include"
         }
